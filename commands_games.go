@@ -3,7 +3,7 @@ package yageconomy
 import (
 	"fmt"
 	"github.com/jonas747/dcmd"
-	"github.com/jonas747/yageconomy/models"
+	"github.com/Nsadow311/yageconomy/models"
 	"github.com/Nsadow311/stranger/commands"
 	"github.com/Nsadow311/stranger/common"
 	"github.com/volatiletech/sqlboiler/boil"

@@ -9,7 +9,7 @@ import (
 	"github.com/golang/freetype/truetype"
 	"github.com/jonas747/dcmd"
 	"github.com/jonas747/discordgo"
-	"github.com/jonas747/yageconomy/models"
+	"github.com/Nsadow311/yageconomy/models"
 	"github.com/Nsadow311/stranger/bot"
 	"github.com/Nsadow311/stranger/bot/eventsystem"
 	"github.com/Nsadow311/stranger/commands"

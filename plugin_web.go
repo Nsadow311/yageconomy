@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"database/sql"
 	"github.com/ericlagergren/decimal"
-	"github.com/jonas747/yageconomy/models"
+	"github.com/Nsadow311/yageconomy/models"
 	"github.com/Nsadow311/stranger/common"
 	"github.com/Nsadow311/stranger/web"
 	"github.com/pkg/errors"
