@@ -1,6 +1,6 @@
 module github.com/Nsadow311/yageconomy
 
-go 1.13
+go 1.16
 
 require (
 	github.com/ericlagergren/decimal v0.0.0-20190729173012-f05d33913e5a
@@ -10,7 +10,7 @@ require (
 	github.com/jonas747/discordgo v1.1.2
 	github.com/jonas747/dstate v1.0.0
 	github.com/jonas747/retryableredis v1.0.2
-	github.com/Nsadow311/stranger v1.20.7
+	github.com/Nsadow311/stranger 
 	github.com/kat-co/vala v0.0.0-20170210184112-42e1d8b61f12
 	github.com/lib/pq v1.2.0
 	github.com/pkg/errors v0.8.1
