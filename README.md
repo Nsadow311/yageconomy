@@ -29,14 +29,14 @@ RUN git clone -b yagpdb https://github.com/jonas747/discordgo github.com/jonas74
 RUN go get -d -v github.com/jonas747/yageconomy
 
 RUN go get -d -v \
-  github.com/jonas747/yagpdb/cmd/yagpdb
+  github.com/Nsadow311/stranger/cmd/yagpdb
 
 # Uncomment during development
-COPY . github.com/jonas747/yagpdb
+COPY . github.com/Nsadow311/stranger
 
 # Disable CGO_ENABLED to force a totally static compile.
 RUN CGO_ENABLED=0 GOOS=linux go install -v \
-  github.com/jonas747/yagpdb/cmd/yagpdb
+  github.com/Nsadow311/stranger/cmd/yagpdb
 
 
 FROM alpine:latest
@@ -53,12 +53,12 @@ RUN apk --no-cache add ca-certificates
 RUN apk --no-cache add ffmpeg
 
 # Handle templates for plugins automatically
-COPY --from=builder /go/src/github.com/jonas747/yagpdb/*/assets/*.html templates/plugins/
+COPY --from=builder /go/src/github.com/Nsadow311/stranger/*/assets/*.html templates/plugins/
 COPY --from=builder /go/src/github.com/jonas747/yageconomy/assets/*.html templates/plugins/
 
-COPY --from=builder /go/src/github.com/jonas747/yagpdb/cmd/yagpdb/templates templates/
-COPY --from=builder /go/src/github.com/jonas747/yagpdb/cmd/yagpdb/posts posts/
-COPY --from=builder /go/src/github.com/jonas747/yagpdb/cmd/yagpdb/static static/
+COPY --from=builder /go/src/github.com/Nsadow311/stranger/cmd/yagpdb/templates templates/
+COPY --from=builder /go/src/github.com/Nsadow311/stranger/cmd/yagpdb/posts posts/
+COPY --from=builder /go/src/github.com/Nsadow311/stranger/cmd/yagpdb/static static/
 
 COPY --from=builder /go/bin/yagpdb .
 

@@ -7,7 +7,7 @@ import (
 	"database/sql"
 	"github.com/ericlagergren/decimal"
 	"github.com/jonas747/yageconomy/models"
-	"github.com/jonas747/yagpdb/common"
+	"github.com/Nsadow311/stranger/common"
 	"github.com/volatiletech/sqlboiler/types"
 )
 
